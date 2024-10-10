@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+/* body {
+    font-family: Arial, sans-serif;
+  } */
+  
+  .navbar-brand {
+    font-weight: bold;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container {
+    margin-top: 50px;
+  }
+  
+  img {
+    border-radius: 50%;
+  }
+
+
+  body {
+    background-color: #000; /* Set the background color to black */
+    color: #f4f7fa; /* Set text color to a light shade for contrast */
+    margin: 0;
+    font-family: Arial, sans-serif; /* Use a clean font */
+}
+  

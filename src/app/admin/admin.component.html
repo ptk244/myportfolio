@@ -1,0 +1,48 @@
+<div class="container mt-5">
+    <h2>Admin Panel (Reactive Form)</h2>
+    <form [formGroup]="adminForm" (ngSubmit)="saveData()">
+      <!-- Upload Resume -->
+      <div class="form-group">
+        <label for="resume">Upload Resume</label>
+        <input type="file" class="form-control" id="resume" (change)="onFileChange($event)">
+      </div>
+  
+      <!-- Update About Section -->
+      <div class="form-group">
+        <label for="about">About Me</label>
+        <textarea class="form-control" id="about" formControlName="aboutText" rows="3"></textarea>
+        <div *ngIf="adminForm.get('aboutText')?.invalid && adminForm.get('aboutText')?.touched" class="text-danger">
+          About text is required.
+        </div>
+      </div>
+  
+      <!-- Add New Project -->
+      <div class="form-group">
+        <label for="projectTitle">New Project Title</label>
+        <input type="text" class="form-control" id="projectTitle" formControlName="projectTitle">
+      </div>
+      <div class="form-group">
+        <label for="projectDescription">New Project Description</label>
+        <input type="text" class="form-control" id="projectDescription" formControlName="projectDescription">
+      </div>
+      <div class="form-group">
+        <label for="projectLink">New Project Link</label>
+        <input type="text" class="form-control" id="projectLink" formControlName="projectLink">
+      </div>
+  
+      <!-- Add New Certification -->
+      <div class="form-group">
+        <label for="certification">New Certification</label>
+        <input type="text" class="form-control" id="certification" formControlName="certification">
+      </div>
+  
+      <!-- Update Contact -->
+      <div class="form-group">
+        <label for="contact">Update Contact</label>
+        <input type="text" class="form-control" id="contact" formControlName="contactInfo">
+      </div>
+  
+      <button type="submit" class="btn btn-primary" [disabled]="adminForm.invalid">Save Changes</button>
+    </form>
+  </div>
+  

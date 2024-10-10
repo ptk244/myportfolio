@@ -1,0 +1,83 @@
+.iframe-preview {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 100%; /* Full width of the container */
+    height: 600px; /* Adjust height to ensure the full content is visible */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* No scrollbars */
+    zoom: 0.9; /* Scale down the content to ensure it fits */
+    transform-origin: 0 0; /* Ensure proper scaling */
+}
+
+
+  .carousel-content {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .carousel-content h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .carousel-content p {
+    font-size: 1rem;
+    color: #6c757d;
+  }
+
+  .button-group a {
+    font-size: 1rem;
+    margin: 5px;
+    display: inline-block;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: #000;
+    border-radius: 50%;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+
+
+
+
+
+
+  .custom-btn {
+    background-color: #007bff; /* Primary background color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for size */
+    font-size: 1rem; /* Font size */
+    font-weight: bold; /* Bold text */
+    text-decoration: none; /* No underline */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+.custom-btn:hover {
+    background-color: #0056b3; /* Darker background on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+.custom-btn:active {
+    transform: translateY(1px); /* Slight depression effect on click */
+}
+
+
+  
+
+  .title4{
+    color: red;
+  }
+  .title5{
+    color: #000;
+  }
