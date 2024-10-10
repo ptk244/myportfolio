@@ -1,0 +1,213 @@
+/* Section */
+.experience-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    background: linear-gradient(to right, #f0f8ff, #e6e6fa); /* Background gradient */
+    padding: 20px 0;
+}
+
+/* Section heading */
+.section-heading {
+    width: auto;
+    padding: 20px 10px 10px;
+    font-weight: 400;
+    margin-top: 5px;
+    text-align: center; /* Centered heading */
+}
+
+.section-heading span {
+    font-size: 40px;
+    color: #2857a4;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+}
+
+/* Work experience */
+#experience {
+    height: auto;
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.timeline {
+    position: relative;
+    width: 75%;
+}
+
+.timeline-box {
+    position: relative;
+    width: 40%;
+    left: 5%;
+    min-height: 150px;
+    margin: 5px;
+    padding: 15px; /* Padding for better spacing */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    background-color: #ffffff; /* White background for each box */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for animation */
+}
+
+
+
+/* Add colors to timeline boxes */
+.timeline-box:nth-child(odd) {
+    background-color: #f9f9f9; /* Light gray for odd boxes */
+}
+
+.timeline-box:nth-child(even) {
+    background-color: #e3f2fd; /* Light blue for even boxes */
+}
+
+.timeline-box:hover {
+    transform: translateY(-5px); /* Raise effect on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.timeline-box:nth-child(2n) {
+    left: 53%;
+}
+
+.timeline-divider {
+    position: absolute;
+    height: 75%;
+    width: 0;
+    border: 3px dashed skyblue;
+    left: 50%;
+    top: 10%;
+}
+
+.Designation {
+    color: #1a237e; /* Darker blue for designation */
+    text-align: right;
+    margin-bottom: 0px;
+    font-size: 30px;
+    margin-top: 0px;
+}
+
+.company {
+    color: #f57f20; /* Orange for company name */
+    text-align: right;
+    font-size: 20px;
+}
+
+.date {
+    color: darkgray;
+    text-align: right;
+    font-size: 20px;
+}
+
+.text {
+    color: #424242; /* Darker gray for text */
+    text-align: justify;
+    font-size: 20px;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+.timeline-box {
+    position: relative;
+    width: 62%;
+    left: -20%;
+    min-height: 150px;
+    margin: 5px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+}
+
+/* Responsive styles */
+@media screen and (max-width:800px){
+	.timeline-divider {
+		left: 5%;
+	}
+	.timeline-box {
+		left: 12% !important;
+		width: 80%;
+	}
+	/*.timeline-box:nth-child(2n){
+	left: 12%;
+    }*/
+
+    .timeline-box::after {
+    	left:-11% !important;
+    }
+
+    html {
+		font-size: 12px;
+	}
+
+}
+.timeline-traveler {
+	position: sticky;
+	top: 30%;
+	transform: rotate(90deg);
+	z-index: 2;
+}
+
+.timeline-box:nth-child(2n+1)::after {
+	content:"";
+	border-radius: 50%;
+	width: 0.5rem;
+	height: 0.5rem;
+	background-color: darkgray;
+	position: absolute;
+	top:40%;
+	right:-13% ;
+	z-index: 1;
+}
+
+.timeline-box:nth-child(2n)::after {
+	content:"";
+	border-radius: 50%;
+	width: 0.5rem;
+	height: 0.5rem;
+	background-color: darkgray;
+	position: absolute;
+	top:30%;
+	left:-9% ;
+	z-index: 1;
+}
+
+
+
+.timeline-traveler {
+    position: sticky;
+    top: 30%;
+    transform: rotate(133deg);
+    z-index: 2;
+    height: 62px;
+}
+
+.timeline-box::after {
+    content: "";
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: darkgray;
+    position: absolute;
+    top: 30%;
+    right: -13%;
+    z-index: 1;
+}
+
+/* FontAwesome adjustments */
+.fa {
+    display: inline-block;
+    font: normal normal normal 40px / 1 FontAwesome;
+}
+
+/* Additional styles for icons */
+.Designation span i,
+.company span i {
+    color: #2196f3; /* Icon color */
+    margin-right: 5px; /* Spacing for icons */
+}

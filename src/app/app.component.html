@@ -4,12 +4,17 @@
         <div class="nav-container1">
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <div class="container">
+                    <span>
+                        <i class="fa-sharp fa-solid fa-code" style="padding-right: 20px; color: rgb(20, 80, 220); font-size: 24px;"></i>
+                    </span>
+                    
                     <a class="navbar-brand" href="#">Pratik Kulkarni</a>
                     
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <!-- Buttons for each section -->
                         <button class="navbtn" onclick="location.href='#home'">My Portfolio</button>
                         <button class="navbtn" onclick="location.href='#about'">About</button>
+                        <button class="navbtn" onclick="location.href='#experience'">Experience</button>
                         <button class="navbtn" onclick="location.href='#projects'">Projects</button>
                         <button class="navbtn" onclick="location.href='#certifications'">Certifications</button>
                         <button class="navbtn" onclick="location.href='#contact'">Contact</button>
@@ -53,6 +58,9 @@
             <a class="nav-link" onclick="location.href='#about'" (click)="isCollapsed = false">About</a>
         </li>
         <li class="nav-item">
+            <a class="nav-link" onclick="location.href='#experience'"(click)="isCollapsed = false">Experience</a>
+        </li>
+        <li class="nav-item">
             <a class="nav-link" onclick="location.href='#projects'"(click)="isCollapsed = false">Projects</a>
         </li>
         <li class="nav-item">
@@ -74,6 +82,12 @@
     <section id="about" class="about bg-light py-5">
         <div class="container">
             <app-about></app-about>
+        </div>
+    </section>
+
+    <section id="experience" class="experience bg-light py-5">
+        <div class="container">
+            <app-experience></app-experience>
         </div>
     </section>
 

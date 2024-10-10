@@ -10,6 +10,8 @@ import { CertificationsComponent } from './certifications/certifications.compone
 import { ContactComponent } from './contact/contact.component';
 import { AdminComponent } from './admin/admin.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ExperienceComponent } from './experience/experience.component';
+
 
 @NgModule({
   declarations: [
@@ -20,12 +22,15 @@ import { ReactiveFormsModule } from '@angular/forms';
     CertificationsComponent,
     ContactComponent,
     AdminComponent,
+    ExperienceComponent,
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+  
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
