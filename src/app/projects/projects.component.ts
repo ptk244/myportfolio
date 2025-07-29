@@ -20,7 +20,7 @@ export class ProjectsComponent implements OnInit {
       {
         title: 'Codial - Social Media Web Application',
         description: 'A real-time social media platform with chat functionality, built with Node.js, Express.js, and MongoDB.',
-        link: 'https://github.com/ptk244/codial',
+        link: 'https://github.com/ptk244/Codial',
         image: 'assets/codial.jpg' // Replace with your image path
       },
       {
